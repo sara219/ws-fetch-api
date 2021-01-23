@@ -1,7 +1,5 @@
 # Fetch API
 
-# API Introduction
-
 ## What is an API?
 
 An API is the way applications speak to each other.
@@ -44,6 +42,7 @@ fetch('https://api.github.com/users/sara219/repos')
     console.log('success!', data);
   })
   .catch(error => {
+      // There was an error
     console.log('Something went wrong', error);
   });
 
