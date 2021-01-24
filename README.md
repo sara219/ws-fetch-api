@@ -47,3 +47,11 @@ fetch('https://api.github.com/users/sara219/repos')
   });
 
 ```
+
+**NOTE**: By default the Fetch API uses the *GET* method -> GET all the repos for that user! 
+
+**Fetch API Methods**
+ * **GET**: gets resources such as HTML, JS, CSS.
+ * **POST**: sends data to a server in the body of the request.
+ * **PUT**: creating or updating data
+ * **DELETE**: deletes data.
