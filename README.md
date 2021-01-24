@@ -15,9 +15,8 @@ The Fetch is a way used to make *requests*, such as calling an API or fetching a
 
 ### Let’s look at how it works:
 
-the fetch() takes a url:
 
-Let’s say you wanted to get a list of repositories from the GitHub API for a specific user
+Let’s say you wanted to get a list of repositories from the GitHub API for a specific user, the fetch() takes the API:
 
 ```js
 fetch('https://api.github.com/users/sara219/repos')
@@ -33,25 +32,29 @@ Let’s log the response to the console.
 
 ```js
 fetch('https://api.github.com/users/sara219/repos')
+  .then(response => console.log(response)) 
+  // The API call was successful!
+  .catch(error => console.log('Something went wrong', error))
+  // There was an error
+
+```
+Look at the object that comes back. Notice:
+* `Response.body`: the readable stream of the response's body.
+* `Response.headers`: HTTP headers allow the client and the server to pass additional information with the request or the response. An example are *status codes*.
+
+As we said the response.body isn’t usable JSON. It’s something called a ReadableStream. To get our API data as a JSON object, we can use a method native to the Fetch API: ***json()***
+
+```js
+fetch('https://api.github.com/users/chriscoyier/repos')
   .then(response => {
     // here we're turning the response into JSON.
     return response.json();
   })
   .then(data => {
     // Here's a list of repos!
-    console.log('success!', data);
+    console.log(data);
   })
   .catch(error => {
-      // There was an error
-    console.log('Something went wrong', error);
+    console.log(error);
   });
-
 ```
-
-**NOTE**: By default the Fetch API uses the *GET* method -> GET all the repos for that user! 
-
-**Fetch API Methods**
- * **GET**: gets resources such as HTML, JS, CSS.
- * **POST**: sends data to a server in the body of the request.
- * **PUT**: creating or updating data
- * **DELETE**: deletes data.
