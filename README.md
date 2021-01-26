@@ -75,6 +75,3 @@ fetch('https://api.github.com/users/sara219/repos')
 * **PUT** : Update an existing resource (overwriting)
 * **DELETE**: deletes data.
 
-<hr>
-
-(Recourses)[]
