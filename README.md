@@ -25,7 +25,10 @@ Let’s say you wanted to get a list of repositories from the GitHub API for a s
 fetch('https://api.github.com/users/sara219/repos')
 ```
 
-The first part `(https://api.github.com)` - *domain name* - is like the address of a block of flats. The second part `(users/sara219/repos)` is what we call an *endpoint*; this specifies a specific flat. 
+* The first part `(https://api.github.com)` - *domain name* - is like * the address of a block of flats. 
+
+* The second part `(users/sara219/repos)` is what we call an - *endpoint* -; this specifies a specific flat. 
+
 The fetch function goes to the address that we give it and asks for information at that address.
 
 
@@ -72,3 +75,6 @@ fetch('https://api.github.com/users/chriscoyier/repos')
 * **PUT** : Update an existing resource (overwriting)
 * **DELETE**: deletes data.
 
+<hr>
+
+(Recourses)[]
