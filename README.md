@@ -31,7 +31,7 @@ The fetch function goes to the address that we give it and asks for information 
 
 The fetch() method returns a Promise. We handle API responses using `then()` and `catch()`. 
 
-Let’s log the response to the console.
+> Let’s log the response to the console.
 
 ```js
 fetch('https://api.github.com/users/sara219/repos')
@@ -41,7 +41,7 @@ fetch('https://api.github.com/users/sara219/repos')
   // There was an error
 
 ```
-Look at the object that comes back. Notice:
+> Look at the object that comes back. Notice:
 * `Response.body`: the readable stream of the response's body.
 * `Response.headers`: HTTP headers allow the client and the server to pass additional information with the request or the response. An example are *status codes*.
 
@@ -61,3 +61,11 @@ fetch('https://api.github.com/users/chriscoyier/repos')
     console.log(error);
   });
 ```
+> *check the console now!*
+
+**NOTE:** By default the Fetch API uses the GET method, there are different methods:
+
+* **GET**: retrieve data from the server.
+* **POST**: Sends data to the server and creates a new resource
+* **PUT** : Update an existing resource (overwriting)
+* **DELETE**: deletes data.
