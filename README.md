@@ -13,7 +13,7 @@ API calls follow a *request/response* pattern. We request information and we rec
 
 ## Fetch API
 
-The Fetch is a way used to make *requests*, such as calling an API or fetching a remote resource or HTML file from a server.
+The Fetch is a way used to make *requests*, such as fetching a remote resource or HTML file from a server.
 
 
 ### Let’s look at how it works:
@@ -25,9 +25,9 @@ Let’s say you wanted to get a list of repositories from the GitHub API for a s
 fetch('https://api.github.com/users/sara219/repos')
 ```
 
-* The first part `(https://api.github.com)` - *domain name* - is like * the address of a block of flats. 
+* The first part `(https://api.github.com)` - *domain name* - is like the address of a block of flats. 
 
-* The second part `(users/sara219/repos)` is what we call an - *endpoint* -; this specifies a specific flat. 
+* The second part `(users/sara219/repos)`  - *endpoint* -; this specifies a specific flat. 
 
 The fetch function goes to the address that we give it and asks for information at that address.
 
