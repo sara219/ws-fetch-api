@@ -4,7 +4,7 @@
 
 API stands for application programming interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
 
-![api](https://hackernoon.com/hn-images/1*CkynRe-J1FVnUAk7JmOTdQ.gif)
+![api](https://www.aloi.io/wp-content/uploads/2019/09/api-visual.png)
 
 
 API calls follow a *request/response* pattern. We request information and we receive that information as a response. Every time we open a browser, or go to a website we are making a request to a server and what we see is the response from the server.
