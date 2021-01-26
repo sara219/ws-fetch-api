@@ -53,14 +53,14 @@ fetch('https://api.github.com/users/sara219/repos')
 As we said the response.body isn’t usable JSON. It’s something called a ReadableStream. To get our API data as a JSON object, we can use a method native to the Fetch API: ***json()***
 
 ```js
-fetch('https://api.github.com/users/chriscoyier/repos')
+fetch('https://api.github.com/users/sara219/repos')
   .then(response => {
-    // here we're turning the response into JSON.
     return response.json();
+    // here we're turning the response into JSON
   })
   .then(data => {
-    // Here's a list of repos!
     console.log(data);
+     // Here's a list of repos!
   })
   .catch(error => {
     console.log(error);
