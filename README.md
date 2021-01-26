@@ -71,3 +71,4 @@ fetch('https://api.github.com/users/chriscoyier/repos')
 * **POST**: Sends data to the server and creates a new resource
 * **PUT** : Update an existing resource (overwriting)
 * **DELETE**: deletes data.
+
