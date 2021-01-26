@@ -41,7 +41,9 @@ fetch('https://api.github.com/users/sara219/repos')
   // There was an error
 
 ```
-> Look at the object that comes back. Notice:
+> Look at the object that comes back. 
+
+**Notice:**
 * `Response.body`: the readable stream of the response's body.
 * `Response.headers`: HTTP headers allow the client and the server to pass additional information with the request or the response. An example are *status codes*.
 
