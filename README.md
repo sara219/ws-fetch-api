@@ -16,7 +16,7 @@ API calls follow a *request/response* pattern. We request information and we rec
 The Fetch is a way used to make *requests*, such as fetching a remote resource or HTML file from a server.
 
 
-### Let’s look at how it works:
+### Let’s look at how it works: :technologist:
 
 
 Let’s say you wanted to get a list of repositories from the GitHub API for a specific user, the fetch() takes the API:
