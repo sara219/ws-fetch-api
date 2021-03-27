@@ -1,5 +1,7 @@
 # Fetch API
 
+
+
 ## What is an API?
 
 API stands for application programming interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
