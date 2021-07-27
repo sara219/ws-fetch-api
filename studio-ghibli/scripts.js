@@ -9,7 +9,7 @@ container.setAttribute("class", "container");
 app.appendChild(logo);
 app.appendChild(container);
 
-fetch("https://ghibliapi.herokuapp.com/fillms")
+fetch("https://ghibliapi.herokuapp.com/films")
   .then((response) => {
     if (response.status !== 200) {
       console.log(
